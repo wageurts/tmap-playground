@@ -24,7 +24,7 @@ jobs:
       run: mvn -B package --file pom.xml
 
   sonarcloud:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
         with:
